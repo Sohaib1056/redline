@@ -230,7 +230,7 @@ export function RequestForm() {
         {/* Section 1: Patient Information */}
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #F1F5F9", paddingBottom: 10 }}>
-            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#E50914", color: "#FFF", fontWeight: 900, fontSize: 13, display: "flex", alignItems: "center", justifyCenter: "center", justifyContent: "center" }}>
+            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#E50914", color: "#FFF", fontWeight: 900, fontSize: 13, display: "flex", alignItems: "center", justifyContent: "center" }}>
               1
             </div>
             <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0F172A", margin: 0 }}>
@@ -294,7 +294,7 @@ export function RequestForm() {
         {/* Section 2: Location & GPS Pin */}
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #F1F5F9", paddingBottom: 10 }}>
-            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#E50914", color: "#FFF", fontWeight: 900, fontSize: 13, display: "flex", alignItems: "center", justifyCenter: "center", justifyContent: "center" }}>
+            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#E50914", color: "#FFF", fontWeight: 900, fontSize: 13, display: "flex", alignItems: "center", justifyContent: "center" }}>
               2
             </div>
             <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0F172A", margin: 0 }}>
@@ -414,7 +414,7 @@ export function RequestForm() {
         {/* Section 3: Journey & Clinical Details */}
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18, borderBottom: "2px solid #F1F5F9", paddingBottom: 10 }}>
-            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#E50914", color: "#FFF", fontWeight: 900, fontSize: 13, display: "flex", alignItems: "center", justifyCenter: "center", justifyContent: "center" }}>
+            <div style={{ width: 28, height: 28, borderRadius: "50%", background: "#E50914", color: "#FFF", fontWeight: 900, fontSize: 13, display: "flex", alignItems: "center", justifyContent: "center" }}>
               3
             </div>
             <h2 style={{ fontSize: 18, fontWeight: 800, color: "#0F172A", margin: 0 }}>
