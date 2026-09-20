@@ -1,0 +1,53 @@
+[
+  {
+    "id": "req_1001",
+    "request_number": "AMB-1001",
+    "patient_name": "Priya Sharma",
+    "phone": "+91 98100 55012",
+    "pickup_location": "Connaught Place, New Delhi",
+    "destination": "All India Institute of Medical Sciences (AIIMS)",
+    "service": "Patient Transfer",
+    "preferred_date": "2026-09-19",
+    "preferred_time": "14:30",
+    "patient_condition": "Stable, post-operative",
+    "additional_information": "Wheelchair access required at pickup.",
+    "status": "New",
+    "admin_response": "",
+    "created_at": "2026-09-19T07:15:00.000Z",
+    "updated_at": "2026-09-19T07:15:00.000Z"
+  },
+  {
+    "id": "req_1002",
+    "request_number": "AMB-1002",
+    "patient_name": "Rohan Mehta",
+    "phone": "+91 99870 48231",
+    "pickup_location": "Vasant Kunj, New Delhi",
+    "destination": "Fortis Hospital, Vasant Kunj",
+    "service": "Emergency Ambulance",
+    "preferred_date": "2026-09-19",
+    "preferred_time": "11:00",
+    "patient_condition": "Breathing difficulty",
+    "additional_information": "Family member will meet the crew at the gate.",
+    "status": "In Progress",
+    "admin_response": "Crew dispatched. ETA 12 minutes.",
+    "created_at": "2026-09-19T05:40:00.000Z",
+    "updated_at": "2026-09-19T06:05:00.000Z"
+  },
+  {
+    "id": "req_1003",
+    "request_number": "AMB-1003",
+    "patient_name": "Sunita Verma",
+    "phone": "+91 93456 23011",
+    "pickup_location": "Lajpat Nagar, New Delhi",
+    "destination": "Apollo Hospital, Sarita Vihar",
+    "service": "Critical Care Ambulance",
+    "preferred_date": "2026-09-18",
+    "preferred_time": "19:45",
+    "patient_condition": "Under observation",
+    "additional_information": "Requires monitored transfer with oxygen support.",
+    "status": "Completed",
+    "admin_response": "Transfer completed safely.",
+    "created_at": "2026-09-18T14:12:00.000Z",
+    "updated_at": "2026-09-18T16:30:00.000Z"
+  }
+]

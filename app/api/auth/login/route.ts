@@ -1,0 +1,3 @@
+import { NextResponse } from 'next/server';
+
+export async function POST(request: Request) { const body = await request.json(); const email = process.env.ADMIN_EMAIL ?? 'admin@redline.demo'; const password = process.env.ADMIN_PASSWORD ?? 'redline-demo'; if (body.email !== email || body.password !== password) return NextResponse.json({ error: 'Invalid credentials.' }, { status: 401 }); const response = NextResponse.json({ ok: true }); response.cookies.set('redline_admin', 'authenticated', { httpOnly: true, sameSite: 'lax', secure: process.env.NODE_ENV === 'production', path: '/', maxAge: 60 * 60 * 8 }); return response; }
