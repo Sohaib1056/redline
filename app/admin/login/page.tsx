@@ -12,12 +12,6 @@ export default function AdminLoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  function handleQuickFill() {
-    setEmail("admin@redline.com");
-    setPassword("RedlineDemo123!");
-    setError("");
-  }
-
   async function submit(event: FormEvent) {
     event.preventDefault();
     setLoading(true);
@@ -46,7 +40,7 @@ export default function AdminLoginPage() {
 
   return (
     <main className="admin-login-split-page">
-      {/* Left Visual Hero Sidebar (50% Width, Pure White Crisp Contrast Text) */}
+      {/* Left Visual Hero Sidebar */}
       <div className="login-hero-sidebar">
         <div className="login-hero-brand">
           <div className="login-hero-brand-icon">
@@ -106,7 +100,7 @@ export default function AdminLoginPage() {
         </div>
       </div>
 
-      {/* Right Login Form Sidebar (50% Width) */}
+      {/* Right Login Form Sidebar */}
       <div className="login-form-sidebar">
         <div className="login-box-container">
           <div style={{ marginBottom: 28 }}>
@@ -125,26 +119,8 @@ export default function AdminLoginPage() {
               Admin Sign In
             </h2>
             <p style={{ fontSize: 13.5, color: "#64748B", lineHeight: 1.5 }}>
-              Enter your admin credentials to access the RedLine Dispatch Command Center.
+              Enter your authorized admin credentials to access the RedLine Dispatch Command Center.
             </p>
-          </div>
-
-          {/* Quick Credentials Box */}
-          <div className="demo-credentials-box">
-            <div className="demo-credentials-header">
-              <span>🔐 Authorized Login Credentials</span>
-              <button type="button" className="quick-fill-btn" onClick={handleQuickFill}>
-                Fill Demo Auth
-              </button>
-            </div>
-            <div style={{ fontSize: 12, color: "#99010A", lineHeight: 1.6 }}>
-              <div>
-                Email: <strong style={{ fontFamily: "monospace" }}>admin@redline.com</strong>
-              </div>
-              <div>
-                Password: <strong style={{ fontFamily: "monospace" }}>RedlineDemo123!</strong>
-              </div>
-            </div>
           </div>
 
           <form onSubmit={submit}>
