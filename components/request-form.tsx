@@ -116,6 +116,7 @@ export function RequestForm() {
   if (successRef) {
     return (
       <div
+        className="request-success-box"
         style={{
           maxWidth: 640,
           margin: "40px auto",
@@ -186,7 +187,7 @@ export function RequestForm() {
   }
 
   return (
-    <div style={{ maxWidth: 860, margin: "0 auto", padding: "20px 0" }}>
+    <div className="request-form-wrap" style={{ maxWidth: 860, margin: "0 auto", padding: "20px 16px" }}>
       {/* Intro Header */}
       <div style={{ textAlign: "center", marginBottom: 32 }}>
         <span
@@ -216,6 +217,7 @@ export function RequestForm() {
 
       {/* Main Request Form Card */}
       <form
+        className="request-form-card"
         onSubmit={submit}
         style={{
           background: "#FFFFFF",

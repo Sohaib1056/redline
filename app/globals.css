@@ -1483,6 +1483,28 @@ a:hover { color: var(--red); }
   color: #E50914;
 }
 
+/* ── Login Form Sidebar (Right Panel) ── */
+.login-form-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  background: #FFFFFF;
+  overflow-y: auto;
+}
+
+.login-box-container {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ── Contact Form Phone + Service Row ── */
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
 @media (max-width: 1024px) {
   .admin-login-split-page {
     grid-template-columns: 1fr;
@@ -1495,6 +1517,7 @@ a:hover { color: var(--red); }
   }
   .login-form-sidebar {
     padding: 36px 24px;
+    justify-content: flex-start;
   }
 }
 
@@ -2254,6 +2277,43 @@ a:hover { color: var(--red); }
   .mobile-menu-btn { display: flex; }
 }
 
+@media (max-width: 768px) {
+  /* ── Request Form (Mobile) ── */
+  .form-shell { padding: 32px 16px 60px; }
+  .request-form-wrap { padding: 16px 0 !important; }
+  .request-form-card { padding: 20px 16px !important; gap: 24px !important; border-radius: 12px !important; }
+  .request-success-box { padding: 32px 20px !important; margin: 24px 16px !important; }
+
+  /* ── Contact Form Row (Phone + Service) ── */
+  .contact-form-row { grid-template-columns: 1fr !important; }
+
+  /* ── Admin Login Split Screen (Mobile) ── */
+  .admin-login-split-page {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 100vh;
+    max-height: none;
+    overflow: auto;
+  }
+  .login-hero-sidebar {
+    padding: 28px 20px;
+    min-height: unset;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .login-hero-body { margin: 0; }
+  .login-hero-body h1 { font-size: 24px !important; margin-bottom: 8px; }
+  .login-hero-body p { font-size: 13.5px !important; margin-bottom: 16px; }
+  .login-hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 16px;
+    gap: 8px;
+  }
+  .login-stat-number { font-size: 18px !important; }
+  .login-form-sidebar { padding: 28px 20px; }
+  .login-box-container { max-width: 100%; }
+}
+
 @media (max-width: 640px) {
   .container { padding: 0 16px; }
   .summary-grid { grid-template-columns: 1fr; }
@@ -2269,5 +2329,27 @@ a:hover { color: var(--red); }
   .hero-slider-btn { width: 36px; height: 36px; font-size: 20px; }
   .hero-slider-btn.prev { left: 8px; }
   .hero-slider-btn.next { right: 8px; }
+
+  /* ── Request Form (Small Mobile) ── */
+  .request-form-card { padding: 16px 12px !important; gap: 20px !important; }
+  .form-shell { padding: 20px 0 40px; }
+
+  /* ── Submit button full width on mobile ── */
+  .request-form-card button[type="submit"] { width: 100%; }
+
+  /* ── Form footer stack on small mobile ── */
+  .request-form-card > div:last-child {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+  .request-form-card > div:last-child button { width: 100%; }
+
+  /* ── Contact page layout ── */
+  .contact-form-row { grid-template-columns: 1fr !important; }
+
+  /* ── Admin Login (Very small mobile) ── */
+  .login-hero-sidebar { padding: 20px 16px; }
+  .login-form-sidebar { padding: 20px 16px; }
+  .login-hero-stats { grid-template-columns: 1fr; gap: 6px; }
 }
 
