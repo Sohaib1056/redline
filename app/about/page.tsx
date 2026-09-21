@@ -132,16 +132,7 @@ export default function AboutPage() {
         {/* Spacious & Uncluttered "OUR MISSION" Section */}
         <section style={{ padding: "56px 0", background: "#FFFFFF" }}>
           <div
-            className="container"
-            style={{
-              maxWidth: 1100,
-              margin: "0 auto",
-              padding: "0 20px",
-              display: "grid",
-              gridTemplateColumns: "1.1fr 0.9fr",
-              gap: 48,
-              alignItems: "center",
-            }}
+            className="container about-mission-grid"
           >
             {/* Left Column */}
             <div>
@@ -182,15 +173,7 @@ export default function AboutPage() {
                 RedLine Ambulance connects homes, diagnostic centers, and premier hospital networks across New Delhi NCR with rapid emergency response, certified clinical staff, and respectful care.
               </p>
 
-              {/* Clean 2x2 SVG Feature Grid */}
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
-                  gap: 16,
-                  marginBottom: 32,
-                }}
-              >
+              <div className="about-features-grid">
                 {[
                   { icon: <AmbulanceIcon size={18} color="#E50914" />, title: "24/7 GPS Dispatch", desc: "Real-time route optimization" },
                   { icon: <StethoscopeIcon size={18} color="#E50914" />, title: "Certified Paramedics", desc: "Trauma & cardiac support" },

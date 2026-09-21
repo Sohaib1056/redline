@@ -159,18 +159,7 @@ export default async function ServiceDetailPage({
 
         {/* Content Section */}
         <section style={{ padding: "36px 0 48px" }}>
-          <div
-            className="container"
-            style={{
-              maxWidth: 1100,
-              margin: "0 auto",
-              padding: "0 20px",
-              display: "grid",
-              gridTemplateColumns: "1fr minmax(280px, 320px)",
-              gap: 28,
-              alignItems: "start",
-            }}
-          >
+          <div className="container service-detail-grid-container">
             {/* Left Main Column */}
             <div>
               {/* Service Overview */}

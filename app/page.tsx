@@ -230,7 +230,7 @@ function Cta() {
             </p>
           </div>
           <div className="cta-actions">
-            <Link href="/request" className="btn btn-primary btn-large">
+            <Link href="/request" className="btn btn-dark btn-large">
               Request an Ambulance
             </Link>
             <a href="tel:+919810055012" className="btn btn-outline-white btn-large">
